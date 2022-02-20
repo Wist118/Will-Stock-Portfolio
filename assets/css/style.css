@@ -118,17 +118,38 @@ header nav ul li a:hover {
     margin-bottom: 15px;
 }
 
+.portfolio main {
+    position: relative;
+}
+
+.portfolio main h2 {
+    position: absolute;
+    background-color: var(--secondary-color);
+    color: white;
+    border: solid 5px black;
+    padding-right: 5px;
+}
+
 .portfolio main img {
     width: 100%;
 }
 
 .portfolio div {
-    width: 40%;
+    width: 45%;
+    margin-top: 10px;
+}
+
+.portfolio div h2 {
+    position: absolute;
+    background-color: var(--secondary-color);
+    color: white;
+    border: solid 5px black;
+    padding-right: 5px; 
 }
 
 .portfolio div img {
     width: 100%;
-    padding: 30px;
+    padding: 0 5px;
     flex: 1;
 }
 
