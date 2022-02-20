@@ -14,6 +14,8 @@ body {
     background-color: var(--tertiary-color);
 }
 
+/* HEADER/NAV STYLE START */
+
 header {
     background-size: cover;
     background-attachment: fixed;
@@ -28,7 +30,7 @@ header {
     top: 0;
     z-index: 9999;
 }
-header h1 a {
+header div a {
     color: white;
 }
 
@@ -55,6 +57,9 @@ header nav ul li a:hover {
     text-shadow: none;
 }
 
+/* HERO/NAV STYLE END */
+
+/* HERO STYLE START */
 
 .hero {
     display: flex;
@@ -77,6 +82,10 @@ header nav ul li a:hover {
     width: 40%;
 }
 
+/* HERO STYLE END */
+
+/* ABOUT ME STYLE START */
+
 .about-me {
     display: flex;
     flex-wrap: wrap;
@@ -90,6 +99,10 @@ header nav ul li a:hover {
 .about-me {
     font-size: 50px;
 }
+
+/* ABOUT ME STYLE END */
+
+/* MY WORK/PORTFOLIO STYLE START */
 
 #my-work {
     text-align: center;
@@ -122,7 +135,7 @@ header nav ul li a:hover {
     position: relative;
 }
 
-.portfolio main h2 {
+.portfolio main h3 {
     position: absolute;
     background-color: var(--secondary-color);
     color: white;
@@ -139,7 +152,7 @@ header nav ul li a:hover {
     margin-top: 10px;
 }
 
-.portfolio div h2 {
+.portfolio div h3 {
     position: absolute;
     background-color: var(--secondary-color);
     color: white;
@@ -153,7 +166,9 @@ header nav ul li a:hover {
     flex: 1;
 }
 
+/* MY WORK STYLE END */
 
+/* FOOTER STYLE START */
 
 footer {
     display: flex;
@@ -167,7 +182,7 @@ footer {
     color: white;
 }
 
-footer h3 {
+footer h2 {
     margin-top: 10px;
 }
 
@@ -176,6 +191,8 @@ footer p {
     margin-top: 10px;
     padding: 15px 15px;
 }
+
+/* FOOTER STYLE END */
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
@@ -242,7 +259,7 @@ footer p {
         padding: 0;
     }
 
-    header h1 {
+    header div {
         width: 100px;
         height: 100px;
     }
@@ -262,7 +279,7 @@ footer p {
        margin-top: -100px;
     }
 
-    .portfolio div h2 {
+    .portfolio div h3 {
         margin-left: 5px;
     }
 
