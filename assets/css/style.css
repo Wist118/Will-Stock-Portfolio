@@ -1,0 +1,235 @@
+:root {
+    --primary-color: #083efd;
+    --secondary-color: #e12836;
+    --tertiary-color: #fffffb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--tertiary-color);
+}
+
+header {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    background-color: var(--primary-color);
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+header h1 a {
+    color: white;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-decoration: none;
+    color: var(--tertiary-color);
+}
+
+header nav ul li a:hover {
+    background: var(--secondary-color);
+    color: white;
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+
+.hero {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px 0;
+    height: 860px;
+}
+
+.hero img {
+    width: 400px;
+    height: auto;
+    margin-right: 25px;
+}
+
+.hero article {
+    line-height: 1.5;
+    margin-left: 50px;
+    width: 40%;
+}
+
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1.5;
+    text-align: center;
+    justify-content: center;
+    position: relative; 
+    margin: 50px;
+}
+
+.about-me {
+    font-size: 50px;
+}
+
+#my-work {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 50px;
+}
+
+.portfolio {
+    width: 80%;
+    height: 600px;
+    margin: auto;
+    overflow: auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio h1 {
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 15px;
+}
+
+.portfolio main img {
+    width: 100%;
+}
+
+.portfolio div {
+    width: 40%;
+}
+
+.portfolio div img {
+    width: 100%;
+    padding: 30px;
+    flex: 1;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: var(--primary-color);
+    width: 100%;
+    text-align: center;
+    line-height: 1.5;
+    position: relative;
+    color: white;
+}
+
+footer h3 {
+    margin-top: 10px;
+}
+
+footer p {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 15px 15px;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+        position: relative;
+    }
+
+    header nav ul {
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 30px;
+    }
+
+    .hero {
+        height: 670px;
+    }
+
+    .hero article {
+        font-size: x-large;
+        margin-top: 15px;
+    }
+
+    .about-me p {
+        font-size: x-large;
+    }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+
+    .hero article {
+        text-align: center;
+        margin: 0%;
+    }
+
+    .portfolio div {
+        width: 50%;
+    }
+    
+    .portfolio div img {
+        padding: 5px;
+    }
+
+    footer p {
+        font-size: larger;
+    }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
+    header {
+        padding: 0;
+    }
+
+    header h1 {
+        width: 100px;
+        height: 100px;
+    }
+
+    header nav {
+        padding: 10px 0;
+        float: left;
+        width: 475px;
+        margin-top: 24px;
+    }
+
+    .portfolio img {
+        height: 230px;
+    }
+
+    footer div p {
+       margin: 0;
+    }
+}
