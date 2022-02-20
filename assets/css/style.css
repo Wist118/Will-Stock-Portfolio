@@ -204,6 +204,14 @@ footer p {
     .about-me p {
         font-size: x-large;
     }
+
+    footer h2 {
+        font-size: xx-large;
+    }
+
+    footer p {
+        font-size: larger;
+    }
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
@@ -246,11 +254,25 @@ footer p {
         margin-top: 24px;
     }
 
+    .portfolio {
+        margin-top: -50px;
+    }
+
+    .portfolio div {
+       margin-top: -100px;
+    }
+
+    .portfolio div h2 {
+        margin-left: 5px;
+    }
+
     .portfolio img {
         height: 230px;
+        width: auto;
     }
 
     footer div p {
        margin: 0;
+       padding: 5px 15px;
     }
 }
